@@ -38,6 +38,7 @@ class MyApp(QDialog): # QDialog jako klasa nadrzedna
         self.ui.pushButton.clicked.connect(self.XY2000)
         self.ui.pushButton_2.clicked.connect(self.pl2XYZ)
         
+        
         #2 karta
         # self.ui.radioButton_GRS_4.toggled.connect(self.select_elipsoida2)
         # self.ui.radioButton_WGS_4.toggled.connect(self.select_elipsoida2)
@@ -871,6 +872,7 @@ class MyApp(QDialog): # QDialog jako klasa nadrzedna
         self.ui.label_34.setText(str(X) + ' ' + '[m]')
         self.ui.label_33.setText(str(Y) + ' ' + '[m]')
         self.ui.label_35.setText(str(Z) + ' ' + '[m]')
+        
 
 if __name__=="__main__":
     app = QApplication(sys.argv)
